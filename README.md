@@ -1,16 +1,8 @@
-# Google Maps in React Demo
+# Bearimeter app
 
-This video covers a **Bear Sighting** React App where we learn how Google Maps, Google Places, and browser geolocation works. All using modern React (hooks) and up to date packages for 2020.
+This is a React app that allows users to mark **Bear Sightings** where we use the Google Maps API, Google Places API, and browser geo location. All using React (hooks).
 
 ## Links
-
-- Source Code: https://github.com/leighhalliday/google-maps-react-2020
-- Video: https://youtu.be/WZcxJGmLbSo
-- Google Maps React: https://www.npmjs.com/package/@react-google-maps/api
-- Google Places React: https://www.npmjs.com/package/use-places-autocomplete
-- Reach Combobox: https://reacttraining.com/reach-ui/combobox/
-- Snazzy Maps Style: https://snazzymaps.com/style/8097/wy
-- Browser Geolocation: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
 
 ## API Keys
 
@@ -19,3 +11,7 @@ For this demo to work, please create a Google Map API Key, and ensure that the t
 - Maps JavaScript API
 - Places API
 - Geocoding API
+
+## How to run the project
+
+In order to run this project you will need to clone the repository, install the npm modules with the command npm install, after the modules are installed you can run the command npm start to start the server at http://localhost:3000/
