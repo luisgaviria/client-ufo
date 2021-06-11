@@ -49,7 +49,7 @@ export default function Search({ panTo }) {
             setValue(event.target.value);
           }}
           disabled={!ready}
-          placeHolder='Enter an address'
+          placeholder='Enter an address'
         />
         <ComboboxPopover>
           <ComboboxList>

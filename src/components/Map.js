@@ -44,7 +44,7 @@ export default function Map() {
   const [selected, setSelected] = React.useState(null);
 
   const onMapClick = React.useCallback(async (event) => {
-    await axios.post(
+    const response = await axios.post(
       "http://localhost:3001/ufo",
       {
         lat: event.latLng.lat(),
@@ -56,6 +56,9 @@ export default function Map() {
         },
       }
     );
+
+    console.log("response:", response.data.ufo.id);
+
     setMarkers((current) => [
       ...current,
       {
