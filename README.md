@@ -1,4 +1,4 @@
-# Bearimeter app
+# Ufo app
 
 This is a React app that allows users to mark **Bear Sightings** where we use the Google Maps API, Google Places API, and browser geo location. All using React (hooks).
 
