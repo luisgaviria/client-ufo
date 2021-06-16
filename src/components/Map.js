@@ -57,7 +57,7 @@ export default function Map() {
       }
     );
 
-    console.log("response:", response.data.ufo.id);
+    console.log("response:", response.data.ufo);
 
     setMarkers((current) => [
       ...current,
