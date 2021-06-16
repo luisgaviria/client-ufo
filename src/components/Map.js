@@ -45,7 +45,7 @@ export default function Map() {
 
   const onMapClick = React.useCallback(async (event) => {
     const response = await axios.post(
-      "http://localhost:3001/ufo",
+      "https://ufo-server-app.herokuapp.com/ufo",
       {
         lat: event.latLng.lat(),
         lng: event.latLng.lng(),
@@ -71,11 +71,14 @@ export default function Map() {
 
   const mapRef = React.useRef();
   const onMapLoad = React.useCallback(async (map) => {
-    const response = await axios.get("http://localhost:3001/ufo", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await axios.get(
+      "https://ufo-server-app.herokuapp.com/ufo",
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const ufos = response.data.ufos;
 
     ufos.map((ufo) => {
@@ -134,10 +137,10 @@ export default function Map() {
               <button
                 onClick={async () => {
                   await axios.delete(
-                    "http://localhost:3001/ufo/" + selected.id
+                    "https://ufo-server-app.herokuapp.com/ufo/" + selected.id
                   );
                   const response = await axios.get(
-                    "http://localhost:3001/ufo",
+                    "https://ufo-server-app.herokuapp.com/ufo",
                     {
                       headers: {
                         "Content-Type": "application/json",
