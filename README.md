@@ -6,8 +6,8 @@ A user can click on the map to add a marker which will be stored in the database
 
 ## Links
 
-https://ufo-client.herokuapp.com/
-https://github.com/luisgaviria/ufo-app
+You can use the app by navigating to: https://ufo-client.herokuapp.com/
+
 
 ## API Keys
 
